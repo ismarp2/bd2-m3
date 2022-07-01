@@ -1,25 +1,27 @@
 package repository_livro
 
 import (
-	"example/trab-banco-m3/models"
+	"net/http"
+
+	"github.com/gin-gonic/gin"
 )
 
 // func GetAlbums(c *gin.Context) {
 // 	c.IndentedJSON(http.StatusOK, albums)
 // }
 
-func ObterLivros() []models.Livro {
-
+func ObterLivros(c *gin.Context) {
+	c.IndentedJSON(http.StatusOK, albums)
 }
 
-func AdicionarLivro(livro models.Livro) models.Livro {
-
+func AdicionarLivro(c *gin.Context) {
+	c.IndentedJSON(http.StatusOK, albums)
 }
 
-func AtualizarLivro(livro models.Livro) models.Livro {
-
+func AtualizarLivro(c *gin.Context) {
+	c.IndentedJSON(http.StatusOK, albums)
 }
 
-func RemoverLivro(livro models.Livro) models.Livro {
-
+func RemoverLivro(c *gin.Context) {
+	c.IndentedJSON(http.StatusOK, albums)
 }
